@@ -1,5 +1,9 @@
 name: Hello World
 
+# Permissions explicites et minimales
+permissions:
+  contents:read  # Just lire le code et pas le modifier
+
 on:
   push:
     branches: [main]
@@ -7,7 +11,7 @@ on:
 
 jobs:
   hello:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Dire bonjour
         run: echo "Hello, GitHub Actions!"
@@ -17,3 +21,9 @@ jobs:
           echo "Repository: \${{ github.repository }}"
           echo "Branche: \${{ github.ref_name }}"
           echo "Auteur du commit: \${{ github.actor }}"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - user: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
+      - run: npm test
