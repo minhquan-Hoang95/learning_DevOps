@@ -2,7 +2,7 @@ name: Hello World
 
 # Permissions explicites et minimales
 permissions:
-  contents:read  # Just lire le code et pas le modifier
+  contents: read  # Just lire le code et pas le modifier
 
 on:
   push:
