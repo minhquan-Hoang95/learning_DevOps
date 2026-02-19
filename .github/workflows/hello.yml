@@ -21,10 +21,7 @@ jobs:
         run: |
           echo "Repository: \${{ github.repository }}"
           echo "Branche: \${{ github.ref_name }}"
-          echo "Auteur du commit: \${{ github.actor }}"
-  add:
-    runs-on: ubuntu-latest
-    steps:
+          
       - name: Add Action Local
         uses: actions/checkout@v4
 
