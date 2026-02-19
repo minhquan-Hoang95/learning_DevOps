@@ -43,6 +43,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Update pip
+        run: pip install --upgrade pip
+
       - name: Installer les dépendances
         run: pip install -r requirements-dev.txt
 
