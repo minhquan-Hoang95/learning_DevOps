@@ -28,3 +28,4 @@ jobs:
       - name: Add Action Local
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup_projet # Action locale
+        run: echo "I added an local action : Done"
