@@ -1,0 +1,20 @@
+name: 'Set up Project'
+description: ' Configure l''environnement du projet'
+
+runs: 
+  using: 'composite'
+  steps:
+    - name: Setup Node.js
+      use: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name : Install dependencies
+      shell: bash
+      run: npm ci
+
+    - name : Verify installation
+    - shell: bash
+      run: npm --version && node --version
+
