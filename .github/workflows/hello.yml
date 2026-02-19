@@ -22,14 +22,14 @@ jobs:
           echo "Repository: \${{ github.repository }}"
           echo "Branche: \${{ github.ref_name }}"
           echo "Auteur du commit: \${{ github.actor }}"
-add:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Add Action Local
-      uses: actions/checkout@v4
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Action Local
+        uses: actions/checkout@v4
 
-    - name: Setup project (local action)
-      uses: ./.github/actions/setup_projet
+      - name: Setup project (local action)
+        uses: ./.github/actions/setup_projet
 
-    - name: Confirm
-      run: echo "I added a local action : Done"
+      - name: Confirm
+        run: echo "I added a local action : Done"
