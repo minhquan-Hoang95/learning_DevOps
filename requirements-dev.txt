@@ -1,0 +1,25 @@
+# Include base requirements
+-r requirements.txt
+
+# Testing
+pytest>=6.2.0
+pytest-cov>=2.12.0
+pytest-mock>=3.6.0
+
+# Code Quality
+black>=21.6b0
+flake8>=3.9.0
+mypy>=0.910
+isort>=5.9.0
+pylint>=2.9.0
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+
+# Jupyter (for notebooks in notebooks/ folder)
+jupyter>=1.0.0
+ipython>=7.0.0
+
+# Linting & Formatting
+autopep8>=1.5.0
