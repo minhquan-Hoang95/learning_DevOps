@@ -1,5 +1,4 @@
-# Include base requirements
--r requirements-dev.txt
+
 
 # Testing
 pytest>=6.2.0
