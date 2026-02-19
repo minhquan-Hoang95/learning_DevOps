@@ -1,0 +1,21 @@
+{
+  "name": "learning_devops",
+  "version": "1.0.0",
+  "description": "Add .github/workflows/hello.yml : Done",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhquan-Hoang95/learning_DevOps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/minhquan-Hoang95/learning_DevOps/issues"
+  },
+  "homepage": "https://github.com/minhquan-Hoang95/learning_DevOps#readme"
+}
