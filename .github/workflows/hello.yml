@@ -23,4 +23,4 @@ jobs:
           echo "Branche: \${{ github.ref_name }}"
           
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-project  # Action locale
+      - uses: ./.github/actions/setup_project  # Action locale
